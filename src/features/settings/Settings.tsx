@@ -1,4 +1,6 @@
 import { Trash2, Volume2, Download, Upload, Database } from 'lucide-react';
+import githubLogo from '../../assets/github-mark-white.svg';
+import linkedinLogo from '../../assets/LI-In-Bug.png';
 import { useStudy } from '../../context/StudyContext';
 import { useRef, useState } from 'react';
 import { audio } from '../../lib/audio';
@@ -259,7 +261,15 @@ export const SettingsPage = () => {
             </div>
 
             <div className="text-center text-text-muted text-sm pt-8">
-                AetherPlan v0.3.0 • Built with ❤️
+                AetherPlan v0.3.0 • Built with ❤️ by <a href="https://github.com/mohdsarfraz08" target="_blank" rel="noopener noreferrer">Mohd Sarfraz</a>
+            </div>
+            <div className="text-center text-text-muted text-sm pt-2">
+                <a href="https://github.com/mohdsarfraz08" target="_blank" rel="noopener noreferrer">
+                    <img src={githubLogo} alt="GitHub" className="w-8 h-8 inline-block mr-2" />
+                </a>
+                <a href="https://www.linkedin.com/in/mohd-sarfaraz08" target="_blank" rel="noopener noreferrer">
+                    <img src={linkedinLogo} alt="LinkedIn" className="w-8 h-8 inline-block mr-2" />
+                </a>
             </div>
 
         </div>
